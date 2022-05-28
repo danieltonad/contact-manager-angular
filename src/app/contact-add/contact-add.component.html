@@ -1,0 +1,32 @@
+<div class="col-xl-6 col-lg-6 col-md-9 col-11 mx-auto my-4" id="form">
+    <div class="form-head">
+      Add Contact
+    </div>
+    <form class="form-panel p-2 py-4 px-3 mx-auto" (ngSubmit)='add()'>
+
+        <div class="form-label">
+          Name
+        </div>
+        <div class="form-input">
+          <input type="text" placeholder="Enter your name" [(ngModel)]="name" name="name" required>
+        </div>
+
+        <div class="form-label">
+          Email
+        </div>
+        <div class="form-input">
+          <input type="email" placeholder="Enter your email" [(ngModel)]="email" name="email" required>
+        </div>
+
+        <div class="form-label">
+          Phone
+        </div>
+        <div class="form-input">
+          <input type="tel" placeholder="Enter your phone" [(ngModel)]="phone" name="phone" required>
+        </div>
+        
+        <button type="submit" class="text-light bg-dark m-2 my-3 text-center" > Submit </button>
+
+
+    </form>
+  </div>

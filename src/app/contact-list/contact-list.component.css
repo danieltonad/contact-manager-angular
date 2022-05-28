@@ -1,0 +1,41 @@
+.each-contact{
+        border: 1px solid rgb(200, 201, 202);
+        border-radius: 2px;
+    }
+
+    #toggle-ico {
+        cursor: pointer;
+        margin: .5px 5px;
+        color: rgb(65, 184, 131) !important;
+    }
+
+    #title{
+        font-weight: 450;
+    }
+
+    #actions{
+        float: right;
+        transition: .25s;
+    }
+
+    span {
+        margin: 0 .5rem
+    }
+
+    #toggle-ico-edit{
+        color: rgb(107, 98, 104) !important;
+    }
+
+    #toggle-ico-del {
+        color: rgb(230, 36, 156) !important;
+        cursor: pointer;
+    }
+
+    #innerDetails {
+        border: 1px solid rgb(200, 201, 202);
+        border-radius: 2px;
+    }
+
+    #innerDetails #innerTxt{
+        margin-left: 1.2rem
+    }

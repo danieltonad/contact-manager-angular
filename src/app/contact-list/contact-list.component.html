@@ -1,0 +1,33 @@
+<div class="col-lg-7 col-xl-7 col-md-8 col-11 py-2 mx-auto">
+    <div class="each-contact my-3 p-2 py-4 container-fluid mx-auto" *ngFor="let contact of contacts" >
+
+        <div id="title">
+            {{contact.name}}
+            <span (click)="toggle(contact)">
+                <fa-icon [icon]="faAngleDoubleDown" id="toggle-ico"></fa-icon>
+            </span>
+
+
+            <div id="actions">
+                <span>
+                    <a [routerLink]="['edit', contact.id]">
+                        <fa-icon [icon]="faEdit" id="toggle-ico-edit"></fa-icon>
+                    </a>
+
+                </span>
+
+                <span (click)="del(contact.id)">
+                    <fa-icon [icon]="faTimes" id="toggle-ico-del"></fa-icon>
+                </span>
+
+            </div>
+
+        </div>
+
+        <div id="innerDetails" class="col-11 mx-auto mt-4 my-2 py-3" *ngIf="contact.toggleShow">
+            <b id="innerTxt">Email</b>: {{contact.email}}
+            <hr>
+            <b id="innerTxt">Phone</b>: {{contact.phone}}
+        </div>
+    </div>
+</div>
